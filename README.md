@@ -1,5 +1,5 @@
 
-# Working-avocet blog
+# Workable-avocet blog
 A blog application using CRUD noSQL, postgres, postico, express, react and node. Make a scalable, single page blog app, and make it responsive, BEAUTIFUL and/or INNOVATIVE!
 
 ## Context
@@ -11,7 +11,7 @@ Creating this web application will provide exposure to:
 - Javascript
 - Use PostgreSQL and Postico relational database interactions (Create, Read, Update, Delete), with SQL practice
 - Use PUG
-- Use RESTeasy or Postman to test routes
+- Use Postman to test routes
 - React as a stretch goal
 
 ## Specifications (100% total) [Github](https://github.com/eobaah/workable-avocet.git)
