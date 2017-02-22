@@ -1,61 +1,253 @@
+---
+authors:
+  - @deadlyicon
+issueNumber: 150
+teamSize: 1
+---
 
-# Workable-avocet blog
-A blog application using CRUD noSQL, postgres, postico, express, react and node. Make a scalable, single page blog app, and make it responsive, BEAUTIFUL and/or INNOVATIVE!
+# Mac Calculator Clone
+
+## Challenge Rating
+
+This goal will likely be within your ZPD if you...
+
+- Can build a full-stack web app using Node.js and npm
+- Can use HTML & CSS to design a UI from a mockup
+- Are interested in self-assessing your web developer skills
+
+## Description
+
+Replicate the builtin Mac calculator as a web app.
+
+The specs for this goal are far too numerous to complete within a week. Do not expect to get everything done but try to get as much done as you can. They are designed to cover a wide range of basic concepts and get progressively more complex.
+
+This goal has [5 linear stages][readme]. You must complete the specs of each stage before progressing onto the next. **The number of stages you complete will be the basis of your self assessment**, so keep track of how far you get, and aim to get farther next time.
+
+Fork the the [mac-calculator-clone repository][mac-calculator-clone] and use the fork as your project artifact.
 
 ## Context
 
-Learners will research award winning, innovative blog designs and use wireframing to pre-visualize their app and put some thought into their desired user experience. Learners will gain practice templating to render blog posts as a single page app. Learners will gain practice setting up a server using Express and/or Express-generator, and templating using Pug (or Handlebars, or equivalent).
+**Use a this goal to**:
 
-Creating this web application will provide exposure to:
-- Express (or other web framework)
-- Javascript
-- Use PostgreSQL and Postico relational database interactions (Create, Read, Update, Delete), with SQL practice
-- Use PUG
-- Use Postman to test routes
-- React as a stretch goal
+- Take a break from pairing
+- Get a sense of what you can accomplish by yourself
+- Work on flexing problem solving skills
+- Assess how much you've learned/grown as a developer
 
-## Specifications (100% total) [Github](https://github.com/eobaah/workable-avocet.git)
-- [ ] Make a wireframe of app (5%)
-- [ ] Use responsive design principles (make it mobile first!)(5%)
+**To get a proper self assessment**:
 
-## User should be able to:
-- [ ] See a feed of recent blog posts. (3%)
-- [ ] Click on a specific blog post excerpt to be taken to the full blog post. (3%)
-- [ ] Each blog post should have a title, author, summary/caption, blog text, picture (optional), date published/updated, tags, and comments. (4%)
+- Do this goal solo
+- Start from scratch
+- Do as much as you can
+- Do not use any unmentioned frameworks
+- Do not look at other solutions to this goal
+- Understand and write every line of code
+- Ask for coaching sessions
+- Do not let coaches write code for you
+- Get frequent code reviews
+- Never copy and paste code from the Internet. Always type it out.
+
+## Specifications
+
+The specs are broken down in the following 5 stages. Make sure to complete all the items in each stages's `Specs` section.
+
+- [Stage 1](#stage-1)
+- [Stage 2](#stage-2)
+- [Stage 3](#stage-3)
+- [Stage 4](#stage-4)
+- [Stage 5](#stage-5)
+
+**IMPORTANT:** When you complete a stage, before moving onto the next stage, tag the commit that completes stage N as `stage-N-complete` using [`git tag`](https://git-scm.com/book/en/v2/Git-Basics-Tagging). *Don't forget to push with `--tags`*.
+
+### Stage 1
+
+In stage 1 you will only be using `HTML` and `CSS` to build a clone of the OS X calculator interface. You're only building the interface in this stage. You'll make the calculator work in stage 2.
+
+![calculator-in-browser](https://cloud.githubusercontent.com/assets/8385/22572099/6786dd74-e957-11e6-9340-278e63aa3809.png)
+
+##### In this stage you will be using at least the following skills:
+
+- HTML/CSS positioning
+- CSS text/type styling
+- Web Fonts
+- Proper HTML formatting
+- Proper CSS formatting
+- Proper DOM positioning of assets
+- Positioning with `inline`, `block` and `inline-block`
+- CSS pseudo-selectors
+- CSS transitions
+- Chrome Developer Tools Element tab
+
+##### During this phase you should…
+
+- Use [normalize.css](https://necolas.github.io/normalize.css/)
+- NOT use any other css frameworks or libraries
+- NOT use any JavaScript
+- NOT use an express server
+- NOT use images
+- NOT use `<table>` tags
+- NOT use `<form>` tags
+- NOT use `<input>` tags
+
+##### Specs
+
+- [ ] All text is in the [Roboto](https://fonts.google.com/specimen/Roboto) web font
+- [ ] Your `HTML` and `CSS` follows this [style guide](https://google.github.io/styleguide/htmlcssguide.xml)
+- [ ] The calculator is positioned in the center of the page, both vertically and horizontally
+- [ ] The calculator is a fixed size. It does not change in size when the page resizes.
+- [ ] If the window is too small for the calculator, the page scrolls, both vertically and horizontally
+- [ ] Each button has a CSS transition to slightly darken the background color on hover over 100ms
+- [ ] Each button has a CSS transition to slightly darken the background color on click over 100ms
+- [ ] All class names re: the calculator are name-spaced under `.calculator-…`
+- [ ] Your stylesheet contains little to no duplicate style declarations
+
+### Stage 2
+
+In stage 2 you will be adding `JavaScript` to make the calculator work.
+
+##### In this stage you will be using at least the following skills:
+
+- ES5 syntax
+- Registering event listeners
+- Binding to the DOM Ready event
+- JavaScript closures
+- JavaScript callbacks
+- JavaScript formatting
+- Event Delegation
+- Event bubbling
+- Querying the DOM API
+- Manipulating the DOM using the DOM API
+- Avoiding using the DOM for state
+
+##### During this phase you should…
+
+- NOT use `jQuery` or any other `JavaScript` libraries or frameworks
+
+##### Specs
+
+- [ ] Your `JavaScript` is written in `ES5`
+- [ ] Your `JavaScript` follows this [style guide](https://google.github.io/styleguide/jsguide.html)
+- [ ] Your JavaScript defines 1 or less global variables
+- [ ] The Calculator display is not an `<input>`
+- [ ] Typing a relevant key at any point is reflected on the calculator
+- [ ] Typing a relevant key causes the corresponding button on the calculator to appear to have been pressed. AKA flashes active
+- [ ] The state of the calculator is not be stored in the `DOM`
+- [ ] The mathematical operations for your calculator are each their own function, and are defined outside of any DOM event handler
+- [ ] When the length of the number displayed exceeds the width available, the font-size deterministically drops
+
+### Stage 3
+
+In stage 3 you are going to add a second calculator to the page. Both calculators will be exactly the same but work independently. This will likely require you to refactor some of the JavaScript you wrote in stage 2.
+
+![two-calculators-in-browser](https://cloud.githubusercontent.com/assets/8385/22572109/72df42ba-e957-11e6-8c9e-c9efd39045c1.png)
+
+##### In this stage you will be using at least the following skills:
+
+- Event delegation
+- JavaScript Constructors
+- Componentization
+- Composition
+
+##### During this phase you should…
+
+- duplicate the HTML for the calculator
+- NOT try and render a calculator from `JavaScript`
+- NOT use `jQuery` or any other `JavaScript` libraries or frameworks
+- consider using a constructor called `Calculator`
+- NOT give each calculator a unique `id` or `classname`
+
+##### Specs
+
+- [ ] Each calculator acts independently.
+- [ ] Clicking anywhere on a calculator focuses that calculator.
+- [ ] Typing a relevant key affects the focused calculator.
+- [ ] Use event delegation to avoid binding a `click` event listener to each button
+- [ ] The focused calculator is `opacity: 1`
+- [ ] The not-focused calculator is `opacity: 0.5`
+
+### Stage 4
+
+In stage 4 you are going to move the work of your calculator to the server. This might seem silly but its a good way to practice moving logic from the browser to the server without the logic itself being too complex.
+
+##### In this stage you will be using at least the following skills:
+
+- Setting up a simple Node express server
+- XHR / AJAX requests
+- Sending conventional HTTP status codes
+- Using conventional HTTP verbs
+- Setting common HTTP headers
+- rendering JSON from express
+- Following the RESTful routes convention
+
+##### During this phase you should…
+
+- initialize a node `package.json`
+- use `express`
+- use a JSON body parser
+- NOT use any other node packages
+
+##### Specs
+
+- [ ] Each mathematical operation should have it's own API endpoint
+- [ ] Each mathematical operation is done on the server
+- [ ] Each request for a mathematical operation is a `post` request
+- [ ] Each operation request responds with `JSON`
+- [ ] When the calculator is waiting for an operation request response, it ignores all input
+
+### Stage 5
+
+In stage 5 you are going to add persistence to your express server. We're going to be persisting the history of the users calculations. We're also going back to just having one calculator on the page.
+
+![calculator-with-history](https://cloud.githubusercontent.com/assets/8385/22572149/9be3c83e-e957-11e6-9431-9b9742b6b4af.png)
+
+##### In this stage you will be using at least the following skills:
+
+- SQL schema design
+- writing SQL queries
+
+##### During this phase you should…
+
+- use the `pg`, `pg-promise`, and/or `knex` packages
+- NOT use any other node packages
+- create a `visitors` table
+- create a `calculations` table
+- persist each mathematical operations
+
+##### Specs
+
+- [ ] there is only one calculator on the page
+- [ ] the calculator displays a scrolling history of calculations
+- [ ] the most recent calculation result is at the bottom
+- [ ] the scroll-back history is always scrolled to the bottom when a new operation result is added
+- [ ] the calculator history is stored per visitor (browser)
+- [ ] the express app uses a cookie to track individual visitors
+- [ ] reloading the page restores the calculator history
+- [ ] the server stores up to 100 calculation results
+- [ ] all mathematical operations have their own function, defined outside of any express router handlers.
 
 ### Required
-- [ ] Edit blog post by clicking a button (26%)
-- [ ] Delete blog post by clicking a button (26%)
-- [ ] Add a new blog post from a front-end user interface (28%)
-- [ ] The artifact produced is properly licensed, preferably with the  [MIT license](https://opensource.org/licenses/MIT).
 
-## Quality Rubric (100% total)
-- [ ] Provide instructions for a reviewer to download a fully functioning version of the app (10%)
-- [ ] Submit a Prrr per day to improve code quality (10%)
-- [ ] All code submissions are peer reviewed via GitHub PR  by at least two members of the team, and master is always in a stable state (tests passed, site functions) (20%)
-- [ ] Variables, functions, css classes, etc. are meaningfully named (no comments exist in code to explain functionality - the names serve that function) (20%)
-- [ ] Code is well organized into a meaningful file  structure (20%)
-- [ ] Interface is user friendly (10%)
-- [ ] Create tests to ensure routes are fully functioning (5%)
-- [ ] Create tests to ensure our database queries are able to retrieve all posts (5%)
+- [ ] The artifact produced is properly licensed, preferably with the [MIT license][mit-license].
 
-## Resources
-Below, a set of recommended tutorials on Treehouse that take you through most of this process:
+## Quality Rubric
 
-Prework: [Node.js Basics](https://teamtreehouse.com/library/nodejs-basics), [NPM Basics](https://teamtreehouse.com/library/express-basics)
-[Express Basics](https://teamtreehouse.com/library/express-basics) (includes explanation of pug templating). This tutorial uses building a blog site as its main example, so it takes you through most of the server-side work! ***
-Optional for those wishing to add a database to their blog site: [SQL Basics track](https://teamtreehouse.com/tracks/learn-sql) that includes four courses "SQL Basics," "Modifying Data with SQL," "Reporting with SQL," and "Querying Relational Databases."
+**Well formatted code**
+- Code uses a linter, which can be invoked with a command (e.g. `npm run lint`). [50 points]
+- Running the linter on all source code files generates no linting errors. [50 points]
 
-## Daily goals
-|Day| Mon | Tues | Wed | Thurs | Fri | Sat |Sun|
-|------------|------------|------------|------------|------------|------------|------------ |------------ |
-||setup server; create schema and connect to the database; implement CRUD; display content in app|  |||||
-|Time|0 hrs|0 hrs|0 hrs|0 hrs|0 hrs|TBD|TBD
+**Clear and useful README**
+- Repository includes a README file with installation and setup instructions. [25 points]
+- Repository includes a README file with usage instructions and at least one example use case. [25 points]
 
+**Proper dependency management**
+- There is a command to install dependencies (e.g. `npm install`) and it is specified in the installation and setup instructions of the README. [50 points]
 
+**Good project management**
+- Commit messages are concise and descriptive. [25 points]
+- All features are added via pull requests. [25 points]
+- Every pull request has a description summarizing the changes made. [25 points]
+- Every pull request has been reviewed by at least one other person. [25 points]
 
-
-<!-- LICENSE -->
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
-<br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+[mit-license]: https://opensource.org/licenses/MIT
+[mac-calculator-clone]: https://github.com/GuildCrafts/mac-calculator-clone
+[readme]: https://github.com/GuildCrafts/mac-calculator-clone/blob/master/README.md
