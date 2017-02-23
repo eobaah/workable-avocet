@@ -52,6 +52,41 @@ body {
   background-color: #e0e0e0;
 }
 
+.operator:hover {
+  background-color: #60411a;
+  transition: background-color 100ms ease;
+  cursor: pointer;
+}
+
+.medium-gray-nums:hover {
+  background-color: #565656;
+  transition: background-color 100ms ease;
+  cursor: pointer;
+}
+
+.lightgray-nums:hover {
+  background-color: #606060;
+  transition: background-color 100ms ease;
+  cursor: pointer;
+}
+.operator:active {
+  background-color: #402b11;
+  transition: background-color 100ms ease;
+  cursor: pointer;
+}
+
+.medium-gray-nums:active {
+  background-color: #393939;
+  transition: background-color 100ms ease;
+  cursor: pointer;
+}
+
+.lightgray-nums:active {
+  background-color: #a0a0a0;
+  transition: background-color 100ms ease;
+  cursor: pointer;
+}
+
 #display {
   background-color: #a0a0a0;
   border-radius: 5px 5px 0 0;
