@@ -4,10 +4,53 @@
   <head>
     <meta charset="utf-8">
     <title>Mac Calculator Clone by Baah</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>An awesome looking calculator</h1>
+    <div class="calculator-container">
+      <div id="display" class="calculator-display">Display</div>
+
+      <div class="calculator-buttons">
+
+        <div class="row one">
+          <div id="ac" class="keys medium-gray-nums">AC</div>
+          <div id="plus-minus" class="keys medium-gray-nums">+/-</div>
+          <div id="percent" class="keys medium-gray-nums">%</div>
+          <div id="divide" class="keys operator">÷</div>
+        </div>
+
+        <div class="row two">
+          <div id="seven" class="keys lightgray-nums">7</div>
+          <div id="eight" class="keys lightgray-nums">8</div>
+          <div id="nine" class="keys lightgray-nums">9</div>
+          <div id="product" class="keys operator">x</div>
+        </div>
+
+        <div class="row three">
+          <div id="4" class="keys lightgray-nums">4</div>
+          <div id="5" class="keys lightgray-nums">5</div>
+          <div id="6" class="keys lightgray-nums">6</div>
+          <div id="minus" class="keys operator">-</div>
+        </div>
+
+        <div class="row four">
+          <div id="1" class="keys lightgray-nums">1</div>
+          <div id="2" class="keys lightgray-nums">2</div>
+          <div id="3" class="keys lightgray-nums">3</div>
+          <div id="plus" class="keys operator">+</div>
+        </div>
+
+        <div class="row five">
+          <div id="zero" class="keys lightgray-nums">0</div>
+          <div id="decimal" class="keys lightgray-nums">.</div>
+          <div id="equals" class="keys operator">=</div>
+        </div>
+
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
