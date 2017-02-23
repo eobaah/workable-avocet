@@ -9,12 +9,10 @@ body {
   align-items: center;
 }
 
-.circles {
-  position: absolute;
-}
 
-.circles > div {
+.calculator-row-circles > div {
   border-radius: 50%;
+  color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +20,16 @@ body {
   height: 10px;
   margin: 5px 3px;
   width: 10px;
+}
 
+.calculator-row-circles > div:hover {
+  color: inherit;
+}
+
+.calculator-row-circles {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
 }
 
 #calculator-red-circle {
@@ -50,9 +57,11 @@ body {
 
 .calculator-buttons {
   background-color: #a0a0a0;
+  border-radius: 0 0 5px 5px;
+
 }
 
-.row {
+.calculator-row {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -60,13 +69,13 @@ body {
   margin: 1px 0;
 }
 
-.row > div {
+.calculator-row > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.keys {
+.calculator-keys {
   text-align: center;
   width: 48px;
 }
@@ -129,12 +138,17 @@ body {
 }
 
 #zero {
+  border-radius: 0 0 0 5px;
   text-align: left;
   padding: 0 0 0 10%;
   width: 78px;
 }
 
-.operator {
+#equals {
+  border-radius: 0 0 5px 0;
+}
+
+.calculator-operator {
   background-color: #e0983d;
   color: #fff;
 }
