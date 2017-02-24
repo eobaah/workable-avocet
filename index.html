@@ -3,53 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>Mac Calculator Clone by Baah</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>An awesome looking calculator</h1>
     <div class="calculator-container">
-      <div id="display" class="calculator-display">Display</div>
+      <div id="display" class="calculator-display" data-sum="0"></div>
       <div class="calculator-row-circles">
-        <div id="calculator-red-circle" class="calculator-disp-circles">x</div>
-        <div id="calculator-yellow-circle" class="calculator-disp-circles">-</div>
-        <div id="calculator-green-circle" class="calculator-disp-circles">+</div>
+        <div id="calculator-red-circle" class="calculator-disp-circles" data-value="x"></div>
+        <div id="calculator-yellow-circle" class="calculator-disp-circles" data-value="-"></div>
+        <div id="calculator-green-circle" class="calculator-disp-circles" data-value="+"></div>
       </div>
 
       <div class="calculator-buttons">
 
         <div class="calculator-row one">
-          <div id="ac" class="calculator-keys medium-gray-nums">AC</div>
-          <div id="plus-minus" class="calculator-keys medium-gray-nums">+/-</div>
-          <div id="percent" class="calculator-keys medium-gray-nums">%</div>
-          <div id="divide" class="calculator-keys calculator-operator">÷</div>
+          <div id="ac" class="calculator-keys medium-gray-nums" data-value="AC"></div>
+          <div id="plus-minus" class="calculator-keys medium-gray-nums" data-value="+/-"></div>
+          <div id="percent" class="calculator-keys medium-gray-nums" data-value="%"></div>
+          <div id="divide" class="calculator-keys calculator-operator" data-value="÷"></div>
         </div>
 
         <div class="calculator-row two">
-          <div id="seven" class="calculator-keys lightgray-nums">7</div>
-          <div id="eight" class="calculator-keys lightgray-nums">8</div>
-          <div id="nine" class="calculator-keys lightgray-nums">9</div>
-          <div id="product" class="calculator-keys calculator-operator">x</div>
+          <div id="seven" class="calculator-keys lightgray-nums" data-value="7"></div>
+          <div id="eight" class="calculator-keys lightgray-nums" data-value="8"></div>
+          <div id="nine" class="calculator-keys lightgray-nums" data-value="9"></div>
+          <div id="product" class="calculator-keys calculator-operator" data-value="x"></div>
         </div>
 
         <div class="calculator-row three">
-          <div id="four" class="calculator-keys lightgray-nums">4</div>
-          <div id="five" class="calculator-keys lightgray-nums">5</div>
-          <div id="six" class="calculator-keys lightgray-nums">6</div>
-          <div id="minus" class="calculator-keys calculator-operator">-</div>
+          <div id="four" class="calculator-keys lightgray-nums" data-value="4"></div>
+          <div id="five" class="calculator-keys lightgray-nums" data-value="5"></div>
+          <div id="six" class="calculator-keys lightgray-nums" data-value="6"></div>
+          <div id="minus" class="calculator-keys calculator-operator" data-value="-"></div>
         </div>
 
         <div class="calculator-row four">
-          <div id="one" class="calculator-keys lightgray-nums">1</div>
-          <div id="two" class="calculator-keys lightgray-nums">2</div>
-          <div id="three" class="calculator-keys lightgray-nums">3</div>
-          <div id="plus" class="calculator-keys calculator-operator">+</div>
+          <div id="one" class="calculator-keys lightgray-nums" data-value="1"></div>
+          <div id="two" class="calculator-keys lightgray-nums" data-value="2"></div>
+          <div id="three" class="calculator-keys lightgray-nums" data-value="3"></div>
+          <div id="plus" class="calculator-keys calculator-operator" data-value="+"></div>
         </div>
 
         <div class="calculator-row five">
-          <div id="zero" class="calculator-keys lightgray-nums">0</div>
-          <div id="decimal" class="calculator-keys lightgray-nums">.</div>
-          <div id="equals" class="calculator-keys calculator-operator">=</div>
+          <div id="zero" class="calculator-keys lightgray-nums" data-value="0"></div>
+          <div id="decimal" class="calculator-keys lightgray-nums" data-value="."></div>
+          <div id="equals" class="calculator-keys calculator-operator" data-value="="></div>
         </div>
 
       </div>
